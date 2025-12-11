@@ -18,5 +18,13 @@ const pageTitle = "首页";
     <Header/>
     <h1>Astro</h1>
     <Footer/>
+    <script>
+      const menu = document.querySelector('.menu');
+
+      menu?.addEventListener('click', () => {
+      const isExpanded = menu.getAttribute('aria-expanded') === 'true';
+      menu.setAttribute('aria-expanded', `${!isExpanded}`);
+    });
+  </script>
   </body>
 </html>
