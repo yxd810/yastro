@@ -1,4 +1,13 @@
 ---
-const { platform, username } = Astro.props;
+const { platform, username } = Astro.props; //  前置元数据。接收来自父组件的属性
 ---
 <a href={`https://www.${platform}.com/${username}`}>{platform}</a>
+
+<style>
+  a {
+    padding: 0.5rem 1rem;
+    color: white;
+    background-color: #4c1d95;
+    text-decoration: none;
+  }
+</style>
