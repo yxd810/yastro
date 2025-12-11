@@ -1,21 +1,22 @@
 ---
-title: '我的第一篇博客文章'
-pubDate: 2022-07-01
-description: '这是我 Astro 博客的第一篇文章。'
-author: 'Astro 学习者'
+layout: ../../layouts/MarkdownPostLayout.astro
+title: 'Astro 学习笔记（一）'
+pubDate: 2022-7-1
+description: '这是我学习 Astro 的第一篇笔记 '
+author: 'Yin '
 image:
     url: 'https://docs.astro.build/assets/rose.webp'
     alt: 'The Astro logo on a dark background with a pink glow.'
 tags: ["astro", "blogging", "learning in public"]
 ---
 
-# 我的第一篇博客文章
+## 我的第一篇博客文章
 
- 发表于：2022-07-01
+ 发表于：2025-12-11
 
- 欢迎来到我学习关于 Astro 的新博客！在这里，我将分享我建立新网站的学习历程。
+ 欢迎来到 **YAstro** 的博客区！在这里，我将分享我用 Astro 框架建立网站的学习历程。
 
- ## 我做了什么
+ ## 今天做了什么
 
  1. **安装 Astro**：首先，我创建了一个新的 Astro 项目并设置好了我的在线账号。
 
@@ -25,4 +26,5 @@ tags: ["astro", "blogging", "learning in public"]
 
  ## 下一步计划
 
- 我将完成 Astro 教程，然后继续编写更多内容。关注我以获取更多信息。
+  我将按照 [**Astro教程**](https://docs.astro.build/zh-cn/tutorial/) 进度，继续学习和编写更多内容。
+  关注我以获取更多信息。
