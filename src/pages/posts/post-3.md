@@ -1,6 +1,5 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
-
 title: Astro 学习笔记（三）
 author: Astro 学习者
 pubDate: "2022-07-15" 
@@ -11,4 +10,5 @@ image:
     alt: "The Astro logo on a dark background with rainbow rays."
 tags: ["astro", "learning in public", "setbacks", "community"]
 ---
+
 尽管这并不总是一帆风顺，但我很享受使用 Astro 进行搭建。并且，[Discord 社区](https://astro.build/chat)真的很友好而且乐于助人！

@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
 title: 'Astro 学习笔记（一）'
-pubDate: 2022-7-1
+pubDate: '2022-7-1'
 description: '这是我学习 Astro 的第一篇笔记 '
 author: 'Yin '
 image:
@@ -16,7 +16,7 @@ tags: ["astro", "blogging", "learning in public"]
 
  欢迎来到 **YAstro** 的博客区！在这里，我将分享我用 Astro 框架建立网站的学习历程。
 
- ## 今天做了什么
+## 今天做了什么
 
  1. **安装 Astro**：首先，我创建了一个新的 Astro 项目并设置好了我的在线账号。
 
@@ -24,7 +24,8 @@ tags: ["astro", "blogging", "learning in public"]
 
  3. **发表博客文章**：这是我的第一篇博客文章！我现在有用 Astro 编写的页面和用 Markdown 写的文章了！
 
- ## 下一步计划
+## 下一步计划
 
-  我将按照 [**Astro教程**](https://docs.astro.build/zh-cn/tutorial/) 进度，继续学习和编写更多内容。
-  关注我以获取更多信息。
+我将按照 [**Astro教程**](https://docs.astro.build/zh-cn/tutorial/) 的学习进度，继续学习和编写更多内容。
+
+关注我以获取更多信息。
