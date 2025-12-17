@@ -1,6 +1,7 @@
 ---
 import "../styles/global.css";
 import BaseLayout from '../layouts/BaseLayout.astro';
+import Greeting from '../components/Greeting';
 
 const pageTitle = "Y Astro";
 ---
@@ -8,4 +9,6 @@ const pageTitle = "Y Astro";
 <BaseLayout pageTitle={pageTitle}>
   <h3>—— (副标题)  欢迎来到 YAstro 网站！</h3>
   <p>这是我的第一个 Astro 网站首页。</p>
+
+  <Greeting client:load messages={["Hej", "Hallo", "Hola", "Habari"]} />
 </BaseLayout>
