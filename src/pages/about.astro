@@ -1,0 +1,51 @@
+---
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import '../styles/global.css';
+
+const pageTitle = "About";
+
+const identity = {
+  firstName: "人在呢",
+  country: "中国",
+  occupation: "电气工程师",
+  hobbies: ["摄影", "旅行", "编程"],
+};
+
+const skills = ["前期准备", "搭建并部署我的第一个 Astro 网站", "在网站上添加、设计和链接页面", "创建和设计 Astro 组件", "通过可复用的页面布局节省时间和精力", "增强网站效果"];
+
+// Some additional variables that are used by condition in the template
+const happy = true;
+const finished = false;
+const goal = 7;
+
+// Style variables
+const skillColor = "crimson";
+const fontWeight = "bold";
+const textCase = "capitalize";
+---
+<BaseLayout pageTitle={pageTitle}>
+  <h3>—— 一个从零开始学习Astro的网站</h3>
+    <p>我正在学习 Astro 的入门教程。</p>
+    <p>随着完成更多教程，该站点将不断更新，所以请持续查看我的学习旅程</p>
+    <p>自画像：</p>
+        <ul>
+          <li>我的名字：{identity.firstName}.</li>
+          <li>我住在{identity.country}。我的职业是{identity.occupation}。</li>
+          {identity.hobbies.length >= 2 &&
+          <li>我的两个爱好：{identity.hobbies[0]}和{identity.hobbies[1]}</li>
+          }
+        </ul>
+    <p>我是按照以下顺序学习 Astro 的：</p>
+        <ul>
+          <!-- 使用 map 方法来列出技能数组里的所有技能 -->
+          {skills.map((skill) => <li class="skill">{skill}</li>)} <!--为列表项添加class类，渲染出绿色 --> 
+        </ul>
+    <!-- 按条件渲染 -->
+    {happy && <p>学习 Astro 很有趣!</p>}
+
+    {goal === 3 ? <p>我的目标是在3天学完这些内容。</p> : <p>我的目标是 7 天学完这些内容。</p>}
+
+    {finished && <p>我完成了所有内容的学习！</p>} <!-- 这行不会显示，因为 finished 是 false -->
+  </BaseLayout>

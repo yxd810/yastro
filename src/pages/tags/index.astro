@@ -1,0 +1,12 @@
+---
+import "../../styles/global.css";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+const tags = ['astro', 'blogging', 'learning in public', 'successes', 'setbacks', 'community', 'Markdown'];
+const pageTitle = "标签索引";
+---
+<BaseLayout pageTitle="标签索引">
+  <!---{tags.map((tag) => <li>{tag}</li>)}--->
+
+  {tags.map((tag) => <li><a href={`/tags/${tag}`} class="no-underline">{tag}</a></li>)}
+
+</BaseLayout>

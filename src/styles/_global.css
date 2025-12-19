@@ -1,0 +1,107 @@
+html {
+  background-color: #c4c4c4;
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 80ch;
+  padding: 1rem;
+  line-height: 1.5;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  margin: 1rem 0;
+  font-size: 2.5rem;
+}
+footer {
+  margin-top: 4rem;
+  padding-top: 1rem;
+  border-top: 1px solid #ccc;
+  font-size: 0.9rem;
+  color: #666;
+  text-align: center;
+}
+/* 导航样式 */
+.menu {
+  background-color: #3b3b3b;
+  border: none;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 5px 10px;
+}
+
+.nav-links {
+  width: 100%;
+  display: none;
+  margin: 0;
+}
+
+.nav-links a {
+  display: block;
+  text-align: center;
+  padding: 10px 0;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.nav-links a:hover,
+.nav-links a:focus {
+  background-color: #b9a4a4;
+}
+
+:has(.menu[aria-expanded="true"]) .nav-links {
+  display: unset;
+}
+
+@media screen and (min-width: 636px) {
+  .nav-links {
+    margin-left: 5em;
+    display: block;
+    position: static;
+    width: auto;
+    background: none;
+  }
+
+  .nav-links a {
+    display: inline-block;
+    padding: 15px 20px;
+  }
+  
+  .menu {
+    display: none;
+  }
+}
+
+/* 深色模式样式 */
+html.dark {
+  background-color: #2f2f31;
+  color: #b9a4a4;
+}
+
+.dark .menu {
+  background-color: #b9a4a4;
+  color: #000;
+}
+
+.dark .nav-links a:hover,
+.dark .nav-links a:focus {
+  color: #0d0950;
+}
+
+.dark .nav-links a {
+  color: #b9a4a4;
+}
+
+.dark a {
+  color: #b9a4a4;
+}

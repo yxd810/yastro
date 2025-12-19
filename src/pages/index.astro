@@ -1,0 +1,25 @@
+---
+import "../styles/global.css";
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Greeting from '../components/Greeting';
+
+const pageTitle = "Y Astro";
+---
+
+<BaseLayout pageTitle={pageTitle}>
+  <h3>——  欢迎来到 Y Astro 网站！</h3>
+  <p>这是我的第一个 Astro 网站首页。</p>
+  <p>在这里记录了我学习astro框架并构建了一个简单博客网站的过程。</p>
+  <p>下面是一个小组件演示，你可以通过点击按钮，看到各种语言的欢迎词。</p>
+  <Greeting client:load messages={[
+    "你好,", 
+    "Hellow! Welcome to my site", 
+    "こんにちは！私のサイトへようこそ", 
+    "안녕하세요! 제 사이트에 오신 것을 환영합니다", 
+    "Hallo! Willkommen auf meiner Seite.", 
+    "Ciao! Benvenuto nel mio sito.",
+    "¡Hola! Bienvenido a mi sitio.",
+    "Bonjour! Bienvenue sur mon site.",
+    "مرحبًا! أهلاً وسهلاً بك في موقعي."
+    ]} />
+</BaseLayout>
