@@ -14,14 +14,14 @@ tags: ["astro", "blogging", "learning in public","准备工作"]
 
 ## 前期准备
 
-### —— 需要了解的了解的知识
+### —— 背景知识
 
  **什么是 Astro**：
-Astro 是适合构建像博客、营销网站、电子商务网站这样的以内容驱动的网站的 Web 框架。
+Astro 是适合构建像博客、营销网站、电子商务网站这样的以内容驱动的静态网站的 Web 框架。
 
 **准备开发环境**
 
-**三个工具**
+**三个工具（以windows系统为例）**
 
 - 终端：CMD/Powershell
 - Node.js 
@@ -129,4 +129,5 @@ astro不仅支持 HTML 页面，还支持在浏览器中直接渲染Markdown文�
 ## 下一步计划
 
 按照 [**Astro教程**](https://docs.astro.build/zh-cn/tutorial/) 的学习进度，继续学习和编写更多内容。
+
 
