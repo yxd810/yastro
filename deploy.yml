@@ -16,6 +16,7 @@ permissions:
 
 jobs:
   build:
+    name: Build site with Astro
     runs-on: ubuntu-latest
     steps:
       - name: Checkout your repository using git
