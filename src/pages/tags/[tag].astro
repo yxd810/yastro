@@ -1,7 +1,8 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 export async function getStaticPaths() {
-  const allPosts = Object.values(import.meta.glob('../posts/*.md', { eager: true }));
+  const allPosts = Object.values(
+    import.meta.glob('../posts/*.md', { eager: true }));
 
   return [
     {params: {tag: "astro"}, props: {posts: allPosts}},
@@ -10,7 +11,9 @@ export async function getStaticPaths() {
     {params: {tag: "blogging"}, props: {posts: allPosts}},
     {params: {tag: "setbacks"}, props: {posts: allPosts}},
     {params: {tag: "Markdown"}, props: {posts: allPosts}},
-    {params: {tag: "learning in public"}, props: {posts: allPosts}}
+    {params: {tag: "learning in public"}, props: {posts: allPosts}},
+    // New tags added here 
+    ...["cloudflare", "D1"].map(tag => ({params: {tag}, props: {posts: allPosts}}))
   ];
 }
 

@@ -1,9 +1,9 @@
 ---
 layout: "../../layouts/MarkdownPostLayout.astro"
 title: 'Astro 学习笔记（五）'
-pubDate: "2025-12-12"
-description: '这是我学习 Astro 的第五篇笔记 '
-author: 'Yin '
+pubDate: "2025-12-16"
+description: '动态页面路由'
+author: '人在呢'
 image:
     url: 'https://docs.astro.build/assets/rose.webp'
     alt: 'The Astro logo on a dark background with a pink glow.'
@@ -15,7 +15,7 @@ tags: ["astro", "blogging", "learning in public", "Markdown"]
 
 现在可以使用 `.astro` 文件创建整套动态页面，这些文件需要向外暴露一个 `getStaticPaths()` 函数。
 
-1.创建一个新文件：`src/pages/tags/[tag].astro`。（你需要创建一个新文件夹。）注意文件名（`[tag].astro`）使用方括号。将以下代码粘贴到文件中：
+1.创建一个新文件：`src/pages/tags/[tag].astro`：
 
 ```astro
     ---
@@ -45,4 +45,4 @@ tags: ["astro", "blogging", "learning in public", "Markdown"]
 
 3.确保每篇博客文章至少包含一个标签，以数组的形式编写，例如 tags: ["blogging"]。
 
-4.在浏览器中访问 `http://localhost:4321/tags/astro`，你应该能看到一个页面，它是从 `[tag].astro` 动态生成的。检查是否还为每个标签创建了页面，例如 `/tags/successes`、`/tags/community`、`/tags/learning%20in%20public` 等，或者你自定义的标签。你可能需要先退出并重新启动开发服务器才能看到这些新页面。
+4.在浏览器中访问 `http://localhost:4321/tags/astro`，看到一个页面，它是从 `[tag].astro` 动态生成的。

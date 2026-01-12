@@ -1,14 +1,14 @@
 html {
-  background-color: #e4f0fc;
-  font-family: sans-serif;
+  background-color: #f0f0f0; /* 修改背景色为更柔和的浅灰色 */
+  font-family: 'Arial', sans-serif; /* 更新字体为常用字体 */
 }
 
 body {
   margin: 0 auto;
   width: 100%;
   max-width: 80ch;
-  padding: 1rem;
-  line-height: 1.5;
+  padding: 2rem; /* 增加内边距 */
+  line-height: 1.6; /* 增加行高，使文本更易读 */
 }
 
 * {
@@ -16,92 +16,124 @@ body {
 }
 
 h1 {
-  margin: 1rem 0;
+  margin: 2rem 0; /* 调整标题外边距 */
   font-size: 2.5rem;
+  color: #333; /* 修改颜色为深灰色，使其更柔和 */
+  /* text-align: center; 标题居中对齐 */
 }
+
 footer {
   margin-top: 4rem;
   padding-top: 1rem;
-  border-top: 1px solid #ccc;
+  border-top: 1px solid #ddd; /* 改为更柔和的边框颜色 */
   font-size: 0.9rem;
   color: #666;
   text-align: center;
 }
+
+/* 去掉链接下划线的样式 */
+    .no-underline {
+    text-decoration: none;
+    /*     color: inherit; 可选，保持颜色一致 */
+}
+
 /* 导航样式 */
 .menu {
-  background-color: #0d0950;
+  background-color: #4a4a4a; /* 修改为较深的灰色，现代感更强 */
   border: none;
   color: #fff;
   font-size: 1.2rem;
   font-weight: bold;
-  padding: 5px 10px;
+  padding: 10px 20px; /* 增加内边距 */
+  border-radius: 5px; /* 添加圆角 */
+  transition: background-color 0.3s; /* 添加过渡效果 */
 }
 
 .nav-links {
-  width: 100%;
-  display: none;
+  width: auto;  
+  display: none; /* 默认不显示 */
   margin: 0;
+  text-align: center; /* 使链接居中对齐 */
+  position: absolute;  /*使菜单项绝对定位 */
+  background-color: #4a4a4a; /* 为菜单项添加背景色以增强可见性 */
+  padding: 10px 0; /* 增加顶部和底部内边距 */
+  border-radius: 5px; /* 添加圆角 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 添加阴影效果 */
 }
 
 .nav-links a {
   display: block;
   text-align: center;
-  padding: 10px 0;
+  padding: 15px 20px; /* 增加内边距 */
   text-decoration: none;
-  font-size: 1.2rem;
-  font-weight: bold;
+  font-size: 1.1rem; /* 调整为更小的字体 */
+  font-weight: normal; /* 改为正常的字体加粗 */
   text-transform: uppercase;
-  color: #0d0950;
+  color: #141414; /* 修改颜色为白色 */
+  transition: background-color 0.3s, color 0.3s; /* 添加过渡效果 */
 }
 
 .nav-links a:hover,
 .nav-links a:focus {
-  background-color: #ff9776;
+  background-color: #6c757d; /* 修改为现代化的灰色，当悬停时 */
+  color: #fff; /* 保持文字为白色 */
+  
+  border-radius: 5px; /*my addition 添加圆角 */
 }
 
 :has(.menu[aria-expanded="true"]) .nav-links {
-  display: unset;
+  display: block; /* 当菜单展开时显示菜单项 */
 }
 
 @media screen and (min-width: 636px) {
   .nav-links {
-    margin-left: 5em;
+    margin-left: 2em; 
     display: block;
-    position: static;
+    position: static; /* 在大屏幕上使用静态定位 */
     width: auto;
-    background: none;
+    background: none; /* 大屏幕时不需要背景色 */
+    padding: 0; /* 移除内边距 */
   }
 
   .nav-links a {
     display: inline-block;
-    padding: 15px 20px;
+    padding: 15px 25px; /* 增加内边距 */
   }
   
   .menu {
     display: none;
   }
 }
+.frontmatter p {
+  margin: 0.2rem 0;
+  color: #5c5c5c; /* 修改为更柔和的灰色 */
+  font-size: 0.95rem; /* 调整字体大小 */
+}
 
 /* 深色模式样式 */
 html.dark {
-  background-color: #0d0950;
-  color: #fff;
+  background-color: #3a3939; /* 修改为更深的背景色 */
+  color: #d3d3d3; /* 修改文本颜色为浅灰色 */
+  h1 {
+    color: #d3d3d3; /* 修改标题颜色为白色 */
+  }
 }
 
 .dark .menu {
-  background-color: #fff;
+  background-color: #d3d3d3; /* 修改为浅灰色 */
   color: #000;
 }
 
 .dark .nav-links a:hover,
 .dark .nav-links a:focus {
-  color: #0d0950;
+  color: #ffffff; /* 在深色模式下悬停时文字变为白色 */
+  background-color: #6c757d; /* 添加深色模式下悬停背景 */
 }
 
 .dark .nav-links a {
-  color: #fff;
+  color: #d3d3d3; /* 修改为浅灰色 */
 }
 
 .dark a {
-  color: #ff9776;
+  color: #d3d3d3; /* 修改为浅灰色 */
 }

@@ -1,13 +1,19 @@
 ---
-const { platform, username } = Astro.props; //  前置元数据。接收来自父组件的属性
+const { platform, username, logofile } = Astro.props; //  前置元数据。接收来自父组件的属性
 ---
-<a href={`https://www.${platform}.com/${username}`}>{platform}</a>
+<!---<a href={`https://www.${platform}.com/${username}`}>{platform}</a> -->
+
+<a href={`https://www.${platform}.com/${username}`}   target="_blank" >
+  <img src={`/${logofile}`} alt="social logo" />
+</a>
 
 <style>
   a {
-    padding: 0.5rem 1rem;
-    color: white;
-    background-color: #4c1d95;
-    text-decoration: none;
+    margin-right: 30px;
+  }
+  img {
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
   }
 </style>
