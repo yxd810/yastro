@@ -5,6 +5,7 @@ import preact from "@astrojs/preact";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://yxd810/yastro.github.io",
+  site: "https://yxd810.github.io",
+  base: '/yastro',
   integrations: [preact()]
-})
+});
